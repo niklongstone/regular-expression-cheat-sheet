@@ -27,7 +27,7 @@ $|end of string or line|finish$|finish|finnish|
 [:class:]|POSIX class|[:alpha:]|string|0101
 .|match any chars except new line|b.ttle|battle, bottle| bttle
 \s|white space, [\n\r\f\t ]|good\smorning|good morning|good.morning
-\S|no-white space, [^\n\r\f\t]|good\Smorning|goodmorning|good morning
+\S|no-white space, [^\n\r\f\t]|good\Smorning|good.morning|good morning
 \d| digit|\d{2}|23|1a
 \D| non-digit|\D{3}|foo, bar|fo1
 \w| word, [a-z-A-Z0-9_]|\w{4}|v411|v4.1
@@ -54,7 +54,7 @@ $|end of string or line|finish$|finish|finnish|
 |Sequence|Description|Example|Valid match|Invalid|
 :---|:---|:---|:---|---
 \||alternation|apple\|orange|apple, orange|melon
-( )| subpattern |foot(er\|ball)|footer or footbal|footpath
+( )| subpattern |foot(er\|ball)|footer or football|footpath
 (?P\<*name*>...)|subpattern, and capture submatch into *name*|`(?P<greeting>hello)`|hello|hallo
 (?:...)|subpattern, but does not capture submatch|(?:hello)|hello|hallo
 +| one or more quantifier|ye+ah|yeah, yeeeah|yah  
